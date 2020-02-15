@@ -2,7 +2,8 @@
 
 set -xe
 
-for model in ssd_mobilenet_v1_coco \
+for model in ssd_mobilenet_v2_garbage_bin \
+             ssd_mobilenet_v1_coco \
              ssd_mobilenet_v1_egohands \
              ssd_mobilenet_v2_coco \
              ssd_mobilenet_v2_egohands ; do

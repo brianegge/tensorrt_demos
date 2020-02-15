@@ -68,6 +68,18 @@ MODEL_SPECS = {
         'max_size': 0.95,
         'input_order': [0, 2, 1],  # order of loc_data, conf_data, priorbox_data
     },
+    'ssd_mobilenet_v2_garbage_bin': {
+        'input_pb':   os.path.abspath(os.path.join(
+                          DIR_NAME, 'ssd_mobilenet_v2_garbage_bin.pb')),
+        'tmp_uff':    os.path.abspath(os.path.join(
+                          DIR_NAME, 'tmp_v2_garbage_bin.uff')),
+        'output_bin': os.path.abspath(os.path.join(
+                          DIR_NAME, 'TRT_ssd_mobilenet_v2_garbage_bin.bin')),
+        'num_classes': 4,
+        'min_size': 0.05,
+        'max_size': 0.95,
+        'input_order': [0, 2, 1],  # order of loc_data, conf_data, priorbox_data
+    },
 }
 INPUT_DIMS = (3, 300, 300)
 DEBUG_UFF = False
